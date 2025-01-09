@@ -1,0 +1,21 @@
+Structure du projet (Expo)
+
+gmao-app/        
+├── assets/        // Ressources (images, icônes)
+│   └── icon.png
+├── components/     // Composants réutilisables
+│   ├── EquipmentCard.js
+│   ├── MaintenanceTask.js
+│   └── ...
+├── navigation/     // Navigation entre les écrans
+│   └── AppNavigator.js
+├── screens/        // Écrans de l'application
+│   ├── EquipmentListScreen.js
+│   ├── EquipmentDetailsScreen.js
+│   ├── MaintenanceScreen.js
+│   └── SettingScreen.js
+├── App.js         // Point d'entrée de l'application
+└── app.json       // Configuration de l'application Expo
+Exemple de code (React Native Expo - EquipmentListScreen.js)
+
+JavaScript
