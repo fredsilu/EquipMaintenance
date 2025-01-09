@@ -1,20 +1,32 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
-const AddEquipmentScreen = ({ navigation }) => {
+const AddEquipmentScreen = ({ navigation }) => {  
+  const [reference, setReference] = useState('');
   const [name, setName] = useState('');
   const [model, setModel] = useState('');
   const [location, setLocation] = useState('');
+  const [spectech, setSpectech] = useState('');
+  
 
   const handleAddEquipment = () => {
     // Ici, vous ajouterez la logique pour enregistrer l'équipement (appel API, etc.)
-    console.log('Nouvel équipement à ajouter:', { name, model, location });
+    console.log('Nouvel équipement à ajouter:', { reference, name, model, location, spectech });
     navigation.goBack(); // Retour à la liste des équipements après l'ajout
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Ajouter un équipement</Text>
+      
+      
+      <TextInput
+        placeholder="Référence"
+        value={reference}
+        onChangeText={setReference}
+        style={styles.input}
+      />
+
       <TextInput
         placeholder="Nom"
         value={name}
@@ -31,6 +43,12 @@ const AddEquipmentScreen = ({ navigation }) => {
         placeholder="Localisation"
         value={location}
         onChangeText={setLocation}
+        style={styles.input}
+      />
+      <TextInput
+        placeholder="Spécifications techniques"
+        value={spectech}
+        onChangeText={setSpectech}
         style={styles.input}
       />
       <Button title="Ajouter" onPress={handleAddEquipment} />

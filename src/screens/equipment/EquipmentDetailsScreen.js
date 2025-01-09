@@ -6,9 +6,10 @@ const EquipmentDetailsScreen = ({ route }) => {
 
   return (
     <View style={styles.container}>
+      <Text>Référence: {equipment.reference}</Text>
       <Text style={styles.title}>{equipment.name}</Text>
       <Text>Modèle: {equipment.model}</Text>
-      <Text>Localisation: {equipment.location}</Text>
+      <Text>Localisation: {equipment.location}</Text>  
       {/* Ajouter ici d'autres détails de l'équipement */}
     </View>
   );

@@ -2,6 +2,13 @@
   <Text>Bonjour le monde !</Text> {/* Correction */}
 </View>
 
+A faire :
+- splash screen
+- authentification
+- qr code pour les equipements
+- creer une tache
+- dans la creation de l'equipement rajouter une image possible
+
 I've implemented the maintenance list screen with:
 
 Search functionality
@@ -27,6 +34,7 @@ Search functionality
 Status filtering
 Equipment status indicators
 Next maintenance date display
+
 Equipment Details with:
 General information
 Maintenance scheduling
